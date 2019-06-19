@@ -7,19 +7,19 @@
 		<style>
 		.foo {
   width: 100%;
-  height: 300px;
+  height: 600px;
   background-color: grey;
 }
 .bar {
   width: 100%;
-  height: 300px;
+  height: 600px;
   background-color: blue;
 }
 #canvas {
   width: 100%;
   height: 100%;
   border: none;
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 </style>
 	</head>
@@ -39,7 +39,7 @@ frameDocument.open();
 frameDocument.write(`
 <!doctype html>
 <html>
-	<body>PDF Element is rendered below:<embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;"></body>
+	<body>PDF Element is rendered below:<embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 600px;"></body>
 </html>
 `);
 frameDocument.close();
